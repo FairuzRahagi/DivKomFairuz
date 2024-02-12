@@ -25,7 +25,7 @@ nav ul {
 }
 
 nav ul li {
-  display: inline-block; /* Change display property to inline-block */
+  display: inline-block;
   margin-right: 20px;
 }
 
@@ -38,31 +38,31 @@ main {
   padding: 20px 0;
 }
 
-.repository {
+.introduction {
   border: 1px solid #ccc;
   padding: 20px;
   margin-bottom: 20px;
 }
 
-.repository h2 {
+.introduction h2 {
   margin-top: 0;
 }
 
-.repository ul {
+.introduction ul {
   list-style-type: none;
   padding: 0;
 }
 
-.repository ul li {
-  display: block; /* Change display property to block */
+.introduction ul li {
+  display: block;
   margin-bottom: 10px;
 }
 
-.repository ul li a {
+.introduction ul li a {
   color: #0366d6;
   text-decoration: none;
 }
 
-.repository ul li a:hover {
+.introduction ul li a:hover {
   text-decoration: underline;
 }
