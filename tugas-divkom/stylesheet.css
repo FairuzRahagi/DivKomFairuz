@@ -38,31 +38,31 @@ main {
   padding: 20px 0;
 }
 
-.introduction {
+.repository {
   border: 1px solid #ccc;
   padding: 20px;
   margin-bottom: 20px;
 }
 
-.introduction h2 {
+.repository h2 {
   margin-top: 0;
 }
 
-.introduction ul {
+.repository ul {
   list-style-type: none;
   padding: 0;
 }
 
-.introduction ul li {
+.repository ul li {
   display: block;
   margin-bottom: 10px;
 }
 
-.introduction ul li a {
+.repository ul li a {
   color: #0366d6;
   text-decoration: none;
 }
 
-.introduction ul li a:hover {
+.repository ul li a:hover {
   text-decoration: underline;
 }
