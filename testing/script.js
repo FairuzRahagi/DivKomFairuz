@@ -1,19 +1,19 @@
 document.getElementById('myForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent the form from submitting normally
     
-    // Get form data
+    // Get name entered by the user
     var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
     
-    // Validate the form
-    if(name.trim() === '' || email.trim() === '') {
-        alert('Please fill out all fields');
+    // Validate the name field
+    if(name.trim() === '') {
+        alert('Please enter your name');
         return;
     }
     
-    // If the form is valid, you can do whatever you want with the data
-    console.log('Name:', name);
-    console.log('Email:', email);
+    // Generate a random number between 1 and 100
+    var randomNumber = Math.floor(Math.random() * 100) + 1;
     
-    // Here you can perform further actions like sending the data to a server using AJAX or manipulating the DOM
+    // Display the result
+    var resultDiv = document.getElementById('result');
+    resultDiv.innerHTML = '<p>Hello, ' + name + '! Your random number is: ' + randomNumber + '</p>';
 });
