@@ -1,4 +1,4 @@
-document.getElementById('myForm').addEventListener('submit', function(event) {
+document.getElementById('form').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent the form from submitting normally
     
     // Get name entered by the user
