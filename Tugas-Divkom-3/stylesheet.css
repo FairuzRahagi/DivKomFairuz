@@ -34,8 +34,29 @@ nav ul li a {
   text-decoration: none;
 }
 
+
 main {
   padding: 20px 0;
+}
+
+.repository {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.repository h2 {
+  margin-top: 0;
+}
+
+.repository ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.repository ul li {
+  display: block;
+  margin-bottom: 10px;
 }
 
 
