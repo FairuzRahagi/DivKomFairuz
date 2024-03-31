@@ -10,14 +10,14 @@
     <div id="response-container">
     </div>
     <script>
-        fetch('https://script.google.com/macros/s/AKfycbwGzRD2jn8Yx9iFUHH7KWtAfEWc59BQjyRngcyA9sq62ruZs_3dHkVGGtTTVuyxUFhn4Q/exec')
+        fetch('https://script.google.com/macros/s/AKfycbxSJVhi8Mp9ha_WXactLu4vvDhA3K1ktpaZH1AxiSHmwHq5EN2v6FBSLMRk8J9KvJMKTQ/exec')
             .then(response => response.json())
             .then(data => {
                 const container = document.getElementById('response-container');
                 container.innerHTML = `
-                    <p>Data 1: ${data.data1}</p>
-                    <p>Data 2: ${data.data2}</p>
-                    <p>Data 3: ${data.data3}</p>
+                    <p>Data 1: ${data.Nama}</p>
+                    <p>Data 2: ${data.NIM}</p>
+                    <p>Data 3: ${data.Angkatan}</p>
                     <!-- Ganti data1, data2, data3 dengan properti yang sesuai -->
                 `;
             })
