@@ -1,1 +1,27 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Form Responses</title>
+</head>
+<body>
+    <h1>Google Form Responses</h1>
+    <div id="response-container">
+    </div>
+    <script>
+        fetch('https://script.google.com/macros/s/AKfycbzQMlSpMuCwiY4aY3LxuexgRmlJACrVU9yryzaEAC0W0wfBRkw1M9yjmH_3qMaXJqRT1w/exec')
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById('response-container');
+                container.innerHTML = `
+                    <p>Data 1: ${data.data1}</p>
+                    <p>Data 2: ${data.data2}</p>
+                    <p>Data 3: ${data.data3}</p>
+                    <!-- Ganti data1, data2, data3 dengan properti yang sesuai -->
+                `;
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    </script>
+</body>
+</html>
