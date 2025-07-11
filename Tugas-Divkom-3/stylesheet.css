@@ -60,6 +60,7 @@ main {
 }
 #result {
   padding-left: 20px; /* atau bisa juga pakai margin-left */
+  color: red;
 }
 
 
