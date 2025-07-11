@@ -58,5 +58,8 @@ main {
   display: block;
   margin-bottom: 10px;
 }
+#result {
+  padding-left: 20px; /* atau bisa juga pakai margin-left */
+}
 
 
